@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="w-full h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wick</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body class="w-full h-full m-0 p-0 flex-column bg-gray-100 text-black">
+    <nav class="w-full h-20 bg-slate-950 fixed flex -mt-20 z-[10000]">
+        <img class="w-48 mx-10" src="imagens/Logo.png" alt="">
+        <ul class="w-full text-xl text-white flex justify-between items-center mx-24">
+            <li><a href="#character-resume">PERSONAGEM</a></li>
+            <li><a href="#john-wick-resume">JOHN WICK</a></li>
+            <li><a href="#john-wick-2-resume">JOHN WICK 2</a></li>
+            <li><a href="#john-wick-3-resume">JOHN WICK 3</a></li>
+            <li><a href="#john-wick-4-resume">JOHN WICK 4</a></li>
+        </ul>
+    </nav>
+    <main class="w-full h-[calc(100%-5rem)] mt-20 flex flex-col">
+        <div id="character-resume" class="w-full h-full bg-black flex relative">
+            <div class="absolute w-[64%] h-full flex justify-end z-[9997]">
+                <img class="h-full relative" src="imagens/blood-line-y.png" alt="" draggable="false">
+            </div>
+            <img class="w-[60%] object-cover" src="imagens/john_wick_portrait.jpg" alt="" draggable="false">
+            <div id="side-panel" class="w-[40%] h-full bg-[#E8E7FA] flex flex-col gap-8 p-6">
+                <p id="resumo-personagem" class="text-2xl bebas-neue-regular text-center z-[9998]">John Wick (Keanu
+                    Reeves)
+                    nasceu
+                    Jardani Jovonovich na Bielorrússia. Ele era órfão e foi levado pela
+                    máfia russa Tarasov, onde foi criado como assassino. Ele era tão implacável que o chefe da máfia
+                    Viggo Tarasov o respeitava e temia.</p>
+                <img class="w-full h-[20rem]" src="imagens/side_logo.png" alt="">
+                <div class="w-full h-24 flex justify-between gap-5 z-[9999]">
+                    <button id="john-wick" onclick="acaoMudancaCard(this.id)"
+                        class="w-full h-full john-wick-gradient rounded-lg text-white">John Wick</button>
+                    <button id="john-wick-2" onclick="acaoMudancaCard(this.id)"
+                        class="w-full h-full john-wick-2-gradient rounded-lg text-white">John Wick 2</button>
+                    <button id="john-wick-3" onclick="acaoMudancaCard(this.id)"
+                        class="w-full h-full john-wick-3-gradient rounded-lg text-white">John Wick 3</button>
+                    <button id="john-wick-4" onclick="acaoMudancaCard(this.id)"
+                        class="w-full h-full john-wick-4-gradient rounded-lg text-white">John Wick 4</button>
+                </div>
+                <div class="swiper z-[9999]">
+                    <div id="filmes-carousel" class="swiper-wrapper">
+                        <div class="swiper-slide bg-indigo-1000 flex gap-5 rounded-[15px] text-white p-6 z-[9996]">
+                            <img destination="#john-wick-resume" id="foto-filme-card"
+                                class="w-1/2 h-full rounded-md cursor-pointer" src="imagens/johnwick1.jpg" alt="">
+                            <div class="w-1/2 h-full flex flex-col items-center gap-1">
+                                <h1 class="text-2xl">Sinopse</h1>
+                                <p id="nome-filme-card"><b>John Wick: De Volta ao Jogo</b></p>
+                                <div class="w-full h-[2px] bg-gray-800 my-5"></div>
+                                <p id="sinopse-filme-card" class="text-xl">John Wick é um lendário assassino de aluguel
+                                    aposentado, lidando
+                                    com o luto após perder o grande amor de sua vida. Quando um gângster invade sua
+                                    casa,
+                                    mata seu cachorro e rouba seu carro, ele é forçado a voltar à ativa e inicia sua
+                                    vingança.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-indigo-1000 flex gap-5 rounded-[15px] text-white p-6">
+                            <img destination="#john-wick-2-resume" id="foto-filme-card"
+                                class="w-1/2 h-full rounded-md cursor-pointer z-[9999]"
+                                src="imagens/john-wick-chapter-2-poster.jpg" alt="">
+                            <div class="w-1/2 h-full flex flex-col items-center gap-1">
+                                <h1 class="text-2xl">Sinopse</h1>
+                                <p id="nome-filme-card"><b>John Wick 2: Um Novo Dia Para Matar</b></p>
+                                <div class="w-full h-[2px] bg-gray-800 my-5"></div>
+                                <p id="sinopse-filme-card" class="text-xl">John Wick é forçado a deixar a aposentadoria
+                                    mais uma vez por causa de uma promessa antiga e viaja para Roma, com o objetivo de
+                                    ajudar um velho amigo a derrubar uma organização secreta, perigosa e mortal de
+                                    assassinos procurados em todo o mundo.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-indigo-1000 flex gap-5 rounded-[15px] text-white p-6">
+                            <img destination="#john-wick-3-resume" id="foto-filme-card"
+                                class="w-1/2 h-full rounded-md cursor-pointer z-[9999]" src="imagens/john wick3.jpg"
+                                alt="">
+                            <div class="w-1/2 h-full flex flex-col items-center gap-1">
+                                <h1 class="text-2xl">Sinopse</h1>
+                                <p id="nome-filme-card"><b>John Wick 3: Parabellum</b></p>
+                                <div class="w-full h-[2px] bg-gray-800 my-5"></div>
+                                <p id="sinopse-filme-card" class="text-xl">O lendário John Wick luta para sair de Nova
+                                    York quando um contrato de 14 milhões de dólares faz dele o alvo dos maiores
+                                    assassinos do mundo.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-indigo-1000 flex gap-5 rounded-[15px] text-white p-6">
+                            <img destination="#john-wick-4-resume" id="foto-filme-card"
+                                class="w-1/2 h-full rounded-md cursor-pointer z-[9999]" src="imagens/john wick 4.jpg"
+                                alt="">
+                            <div class="w-1/2 h-full flex flex-col items-center gap-1">
+                                <h1 class="text-2xl">Sinopse</h1>
+                                <p id="nome-filme-card"><b>John Wick 4: Baba Yaga</b></p>
+                                <div class="w-full h-[2px] bg-gray-800 my-5"></div>
+                                <p id="sinopse-filme-card" class="text-xl">O ex-assassino de aluguel John Wick é
+                                    procurado pelo mundo todo e a recompensa por sua captura aumenta cada vez mais. Wick
+                                    descobre um caminho para derrotar a Alta Cúpula, mas antes de conquistar sua
+                                    liberdade, ele precisa enfrentar um novo inimigo com alianças poderosas e forças que
+                                    transformam velhos amigos em inimigos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="w-full h-[calc(100%-5rem)] relative">
+        <div id="john-wick-resume" class="w-full h-full flex bg-indigo-1000">
+            <div class="absolute w-[44.5%] h-full flex justify-end z-[9998] -mt-14">
+                <img class="w-[12rem] h-[calc(100%+10rem)] relative" src="imagens/blood-line-y.png" alt=""
+                    draggable="false">
+            </div>
+            <div class="absolute w-full flex justify-end -left-10 -top-[8rem]">
+                <img class="w-full h-64" src="imagens/blood-line-x.png" alt="" draggable="false">
+            </div>
+            <div class="w-[40%] p-10 flex flex-col gap-4">
+                <h1 class="text-3xl font-bold text-center mt-12 mb-20 bg-smoke-image">John Wick: De Volta ao Jogo</h1>
+
+                <p class="text-yellow-200"></p>
+                <p class="text-yellow-200">Helen logo falece de uma doença terminal, mas deixa para John um cachorro chamado Daisy para confortá-lo durante seu luto. Enquanto passa o tempo dirigindo seu carro com Daisy, Wick encontra Iosef em um posto de gasolina, e este tenta comprar seu carro. John se recusa, o que resulta em Iosef e seus homens invadindo sua casa, espancando Wick até deixá-lo inconsciente, pegando seu carro e matando Daisy antes de deixar o local. Mais tarde recuperando a consciência, Wick se torna vingativo e se encontra com Aurelio, que revela que Iosef é filho de Viggo. Ele é então contatado por Viggo, querendo que o primeiro poupe seu filho, mas Wick se recusa, e o chefe do crime envia vários homens à sua casa para eliminá-lo.</p>
+                <p class="text-yellow-200">Apesar de enferrujado, Wick consegue matar todos os homens contratados por Viggo e chama o serviço para limpar as evidências. Obtendo seu equipamento e equipamento do chão de concreto, Wick deixa sua casa para o Continental, mas Viggo coloca uma recompensa por John, chamando seu ex-mentor de Marcus e disposto a pagar mais dinheiro aos assassinos se eles quebrarem as regras do Continental. Encontrando-se com Winston, John é informado de que Iosef está escondido no Círculo Vermelho, e Wick vai até lá para matar seu alvo. Não conseguindo matar Iosef, Wick retorna ao Continental para cuidar de seus ferimentos, e mais tarde é avisado por Marcus sobre a tentativa da Sra. Perkins de matá-lo. Conseguindo subjugá-la, John a deixa para ser julgada e destrói o dinheiro e os materiais de Viggo em uma igreja russa.</p>
+                <p class="text-yellow-200">Viggo e seus homens logo chegam e capturam Wick, que é salvo por Marcus mais uma vez, permitindo-lhe forçar Tasarov a revelar a localização de Iosef. John então sai da área e mata Iosef em sua casa segura, e mais tarde é contatado por Viggo, informando-o de que ele matou Marcus e enviou a Sra. Perkins para eliminá-lo. No entanto, Winston matou a Sra. Perkins por quebrar as regras, permitindo que John confrontasse Viggo e seus homens. Wick então luta contra Tasarov em combate, conseguindo matá-lo antes de deixar a área. Entrando em uma clínica veterinária para cuidar de seus ferimentos, ele decide adotar um pit bull.</p>
+                <div class="flex w-full justify-between mt-20 z-[9999]">
+                    <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                        <a href="https://www.primevideo.com/-/pt_PT/detail/De-Volta-Ao-Jogo/0KEOMM8ZSGP2XXCEBDI7KCS0IR"
+                            target="_blank" class="w-36 h-10 flex text-white text-center gap-3">
+                            <img class="w-12 h-12 h-full rounded-lg" src="imagens/prime-video.jpg" alt="">
+                            <p class="-mt-1">Assistir no Prime Video</p>
+                        </a>
+                    </div>
+                    <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                        <a href="https://www.netflix.com/br/title/80013762" target="_blank"
+                            class="w-36 h-10 flex text-white text-center gap-3">
+                            <img class="w-10 h-10 rounded-lg object-cover" src="imagens/netflix-logo.jpg" alt="">
+                            <p class="-mt-1">Assistir na Netflix</p>
+                        </a>
+                    </div>
+
+                    <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                        <a href="https://www.max.com/br/pt/movies/john-wick-de-volta-ao-jogo/1ff1cc37-0986-4574-895e-5ad8033e3857"
+                            target="_blank" class="w-36 h-10 flex text-white text-center gap-3">
+                            <img style="object-position: 46% 100%;" class="w-10 h-10 rounded-lg object-cover"
+                                src="imagens/max-logo.jpeg" alt="">
+                            <p class="-mt-1">ㅤAssistir na Max</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="john-wick-resume-image" class="w-[60%]"">
+        </div>
+    </section>
+    <section class=" w-full h-[calc(100%-5rem)] relative">
+                <div id="john-wick-2-resume" class="w-full h-full flex bg-indigo-1000">
+                    <div class="absolute w-[64%] h-full flex justify-end z-[9998] -mt-14">
+                        <img class="w-[12rem] h-[calc(100%+10rem)] relative" src="imagens/blood-line-y.png" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="absolute w-full flex justify-end -left-10 -top-[8rem]">
+                        <img class="w-full h-64" src="imagens/blood-line-x.png" alt="" draggable="false">
+                    </div>
+                    <div id="john-wick-2-resume-image" class="w-[60%]""></div>
+        <div class=" w-[40%] p-10 flex flex-col gap-4">
+                        <h1 class="text-3xl font-bold text-center mt-12 mb-20 bg-smoke-image">John Wick 2: Um Novo Dia
+                            Para Matar</h1>
+
+                        <p class="text-yellow-200">Santino D'Antonio chega à casa de John Wick pedindo-lhe que pague sua dívida. Quando ele se recusa, Santino destrói sua casa. Em seguida, John vai para o Continental Hotel, onde é confrontado por Winston, que diz a John para cumprir sua dívida, caso contrário, sua vida estará perdida. John então confronta Santino, que o incumbe de matar sua irmã Gianna D'Antonio. Relutantemente, ele aceita e completa sua missão depois que Gianna ordena que seu subordinado Cassian seja deixado sozinho.
+                        </p>
+                        <p class="text-yellow-200">Terminada a missão, Santino ordena a seus homens que matem John, que consegue sobreviver ao ataque dos homens de Santino e de Cassian, quando ele e John Wick caem no Continental. No bar, John pede desculpas por matar Gianna, enquanto Cassian jura vingança. Mais tarde, Santino tenta fazer as pazes com John, mas ele é ignorado e coloca uma recompensa de $ 7.000.000 por sua cabeça.</p>
+                        <p class="text-yellow-200">Muitos assassinos tentam matar John, incluindo Cassian. Mas John mata todos eles, exceto Cassian, que é deixado vivo por respeito profissional. John Wick vai ver o Bowery King, onde seus ferimentos são tratados. John convence o Bowery King a ajudá-lo a matar Santino, que lhe fornece uma arma com apenas sete balas e informações sobre a localização de Santino. John consegue matar a maioria dos capangas de Santino e deixa Ares gravemente ferido, enquanto Santino escapa do Continental.</p>
+                        <p class="text-yellow-200">Santino exige que Winston revogue a associação de John Wick, mas ele diz a ele que o Continental é seu reino e John ainda não quebrou nenhuma regra. Ao mesmo tempo, Winston diz a Santino que tem privilégios no Continental. No entanto, John Wick chega e mata Santino enquanto ele está avaliando, apesar dos avisos de Winston. No dia seguinte, Winston diz a John que a recompensa foi dobrada e colocada internacionalmente. Ele também diz a ele que está excomungado, mas dá a John Wick uma vantagem de uma hora e fornece a ele um marcador para uso futuro. John então corre, sabendo dos possíveis assassinos que o cercam.</p>
+                       
+                        <div class="flex w-full gap-12 mt-20 z-[9999] justify-center">
+                            <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                                <a href="https://www.primevideo.com/-/pt/detail/John-Wick-Um-Novo-Dia-Para-Matar/0IUK3B812OE0SHGE6669S2F27R"
+                                    target="_blank" class="w-36 h-10 flex text-white text-center gap-3">
+                                    <img class="w-12 h-12 h-full rounded-lg" src="imagens/prime-video.jpg" alt="">
+                                    <p class="-mt-1">Assistir no Prime Video</p>
+                                </a>
+                            </div>
+                            <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                                <a href="https://www.netflix.com/br/title/80131552" target="_blank"
+                                    class="w-36 h-10 flex text-white text-center gap-3">
+                                    <img class="w-10 h-10 rounded-lg object-cover" src="imagens/netflix-logo.jpg"
+                                        alt="">
+                                    <p class="-mt-1">Assistir na Netflix</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section class="w-full h-[calc(100%-5rem)] relative">
+        <div id="john-wick-3-resume" class="w-full h-full flex bg-indigo-1000">
+            <div class="absolute w-[44.5%] h-full flex justify-end z-[9998] -mt-14">
+                <img class="w-[12rem] h-[calc(100%+10rem)] relative" src="imagens/blood-line-y.png" alt=""
+                    draggable="false">
+            </div>
+            <div class="absolute w-full flex justify-end -left-10 -top-[8rem]">
+                <img class="w-full h-64" src="imagens/blood-line-x.png" alt="" draggable="false">
+            </div>
+            <div class="w-[40%] p-10 flex flex-col gap-4">
+                <h1 class="text-3xl font-bold text-center mt-12 mb-20 bg-smoke-image">John Wick 3: Parabellum</h1>
+
+                <p class="text-yellow-200">John Wick, agora internacionalmente um homem marcado, está fugindo. Antes de seu status de excomungado ser iniciado, Wick viaja para a Biblioteca Pública de Nova York e obtém um medalhão de marcador e um crucifixo. Lá, ele é atacado e se defende de um assassino que tenta matar Wick cedo. Wick visita um médico para tratar seus ferimentos, mas sua vantagem de 1 hora termina e seu status de excomungado é iniciado, pouco antes de o médico terminar. Wick trata seus ferimentos sozinho e vai embora. No caminho, ele é atacado por uma gangue, mas consegue derrotar todos eles.</p>
+                <p class="text-yellow-200">John visita o Diretor, o chefe da Ruska Roma, e usa o crucifixo para pedir ajuda a Wick para uma passagem segura para Casablanca. Ciente de que ajudar Wick será uma violação de seu tratado de paz com a Mesa Alta, o Diretor relutantemente concorda, sabendo que John é um ex-protegido.</p>
+                <p class="text-yellow-200">Em Casablanca, John conhece Sofia , uma ex-amiga íntima, e pede sua ajuda para localizar o Ancião , o misterioso chefe da Mesa Alta, de quem Wick pode receber penitência, bem como a remoção de seu status de excomungado. Sofia leva John até Berrada, seu ex-patrão, que diz a John que ele pode encontrar o Ancião vagando pelo deserto até que ele não consiga mais andar. Em troca, Berrada pede um dos cachorros de Sofia. Sofia se recusa e Berrada atira no cachorro, que é salvo por um colete à prova de balas. Em retaliação, Sofia tenta matar Berrada, mas John a impede. Sofia então fere Berrada e ela e Wick lutam para escapar.</p>
+                <p class="text-yellow-200">Sofia leva Wick para o deserto e o deixa lá. Depois de passar muito tempo vagando no deserto, John desmaia e é encontrado pelos homens do Ancião. Eles o levam ao Ancião, onde ele pergunta a John por que ele quer viver. John responde que vive para ganhar a memória do amor que teve com sua esposa. O Ancião concorda em perdoá-lo e revoga seu status de excomungado, com a condição de que ele; assassina seu amigo Winston e continua trabalhando para a Mesa Principal até sua morte. John concorda e, para mostrar seu compromisso, corta o dedo anelar e oferece a aliança ao Ancião.</p>
+                <p class="text-yellow-200">John viaja de volta para a cidade de Nova York. Lá, ele é emboscado por assassinos japoneses, liderados por Zero e contratados pelo The Adjudicator, um agente executor da High Table. John sobrevive ao encontro e segue para o Continental para proteção. John conhece Winston, que anteriormente foi informado pelo Adjudicator para deixar o cargo de gerente geral da Continental como punição por ajudar John Wick ao atrasar seu status de excomungado em uma hora.</p>
+                <p class="text-yellow-200">O Árbitro chega ao Continental. Com John se recusando a matar Winston e Winston se recusando a deixar o cargo de gerente geral, o Adjudicator declara o Continental como "desconsagrado", o que permite matar no hotel. Com a ajuda do concierge do hotel, Charon, John consegue resistir às forças da Mesa Alta e, finalmente, derrotá-los, antes de ser confrontado pela gangue de Zero novamente. Wick luta contra eles e eventualmente os derrota ferindo mortalmente Zero, mas poupando seus dois alunos.</p>
+                <p class="text-yellow-200">O Adjudicator contata Winston para negociar, mantendo sua posição como gerente geral, bem como ganhando fidelidade à Mesa Alta devido a sua rebelião ser vista como uma "demonstração de força". No entanto, quando ela pergunta o que eles vão fazer com John Wick, Winston saca sua pistola e atira em John várias vezes. O casaco balístico de John consegue protegê-lo, mas a força o empurrou para fora do prédio e ele caiu na rua, atingindo várias estruturas no caminho.</p>
+                <p class="text-yellow-200">Enquanto o hotel Continental é restaurado e limpo, o Adjudicator revela a Winston que John está desaparecido e que ele será um problema sério para eles. Winston sorri, sabendo o que realmente aconteceu.</p>
+                <p class="text-yellow-200">Um John gravemente ferido é levado para o Bowery King, que anteriormente foi fortemente marcado por Zero por ordem do Adjudicator como punição por ajudar John. Quando o Rei Bowery expressa sua raiva na Mesa Principal e pergunta a John se ele está chateado, John responde "Sim"</p>
+
+                <div class="flex w-full gap-12 mt-20 z-[9999] justify-center">
+                    <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                        <a href="https://www.primevideo.com/-/pt/detail/John-Wick-3---Parabellum/0O733T1H6OITZW94X3B2NU9HNN"
+                            target="_blank" class="w-36 h-10 flex text-white text-center gap-3">
+                            <img class="w-12 h-12 h-full rounded-lg" src="imagens/prime-video.jpg" alt="">
+                            <p class="-mt-1">Assistir no Prime Video</p>
+                        </a>
+                    </div>
+                    <div class="w-48 bg-gray-800 hover:bg-gray-600 p-3 rounded-lg cursor-pointer">
+                        <a href="https://www.netflix.com/br/title/81168939" target="_blank"
+                            class="w-36 h-10 flex text-white text-center gap-3">
+                            <img class="w-10 h-10 rounded-lg object-cover" src="imagens/netflix-logo.jpg" alt="">
+                            <p class="-mt-1">Assistir na Netflix</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="john-wick-3-resume-image" class="w-[60%]"">
+        </div>
+    </section>
+    <section class=" w-full h-[calc(100%-5rem)] relative">
+                <div id="john-wick-4-resume" class="w-full h-full flex bg-indigo-1000">
+                    <div class="absolute w-[64%] h-full flex justify-end z-[9998] -mt-14">
+                        <img class="w-[12rem] h-[calc(100%+10rem)] relative" src="imagens/blood-line-y.png" alt=""
+                            draggable="false">
+                    </div>
+                    <div class="absolute w-full flex justify-end -left-10 -top-[8rem]">
+                        <img class="w-full h-64" src="imagens/blood-line-x.png" alt="" draggable="false">
+                    </div>
+                    <div id="john-wick-4-resume-image" class="w-[60%]""></div>
+        <div class=" w-[40%] p-10 flex flex-col gap-4 items-center">
+                        <h1 class="text-3xl font-bold text-center mt-12 mb-20 bg-smoke-image">John Wick 4: Baba Yaga
+                        </h1>
+
+                        <p class="text-yellow-200">No início de "John Wick 4," John continua a sua batalha para se libertar da organização criminosa conhecida como a Alta Cúpula. Depois dos eventos do terceiro filme, onde John é traído e deixado à beira da morte, ele está mais determinado do que nunca a derrubar a Alta Cúpula e acabar com o sistema que o persegue.
+                        </p>
+                        <p class="text-yellow-200">O filme começa com John buscando novos aliados e enfrentando velhos inimigos enquanto viaja por diferentes partes do mundo. Desde as ruas de Nova York até os desertos da Jordânia, John lida com uma série de desafios e tenta derrubar os membros mais poderosos da Alta Cúpula. Ao longo do caminho, ele encontra novos personagens, incluindo um antigo amigo e uma misteriosa guerreira, que o ajudam em sua jornada.</p>
+                        <p class="text-yellow-200">O ponto culminante do filme ocorre em Paris, onde John enfrenta um dos seus maiores desafios até o momento: um duelo mortal que pode determinar seu destino final. Com coreografias de luta impressionantes e cenários icônicos, o filme termina com uma conclusão épica que deixa os fãs especulando sobre o futuro de John Wick.</p>
+                      
+                        <div class="w-48 bg-gray-800 hover:bg-gray-600 mt-20 p-3 rounded-lg cursor-pointer">
+                            <a href="https://www.primevideo.com/-/pt/detail/John-Wick-Cap%C3%ADtulo-4/0OPU861X5ZA4ETQFV906HPCQ1T"
+                                target="_blank" class="w-36 h-10 flex text-white text-center gap-3">
+                                <img class="w-12 h-12 h-full rounded-lg" src="imagens/prime-video.jpg" alt="">
+                                <p class="-mt-1">Assistir no Prime Video</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <footer class="w-full h-[6.5rem] bg-gray-800 flex items-center justify-between px-10 relative">
+        <div class="absolute w-full flex justify-end -left-10 bottom-7">
+            <img class="w-full h-36" src="imagens/blood-line-x.png" alt="" draggable="false">
+        </div>
+        <img class="h-14" src="imagens/john-wick-footer-logo.png" alt="">
+        <p class="text-white">Isabella Cristina Reis de Arruda © 2024</p>
+        <img class="h-14" src="imagens/john-wick-footer-logo.png" alt="">
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

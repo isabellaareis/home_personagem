@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=SUSE:wght@100..800&display=swap');
+
+* {
+
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    height: calc(100% - 4rem);
+}
+
+.swiper-pagination-bullet {
+    background-color: aliceblue;
+    opacity: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(236, 0, 204);
+    opacity: 100%;
+}
+
+.bg-indigo-1000 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(3, 3, 56) 35%, rgb(33, 0, 33) 100%);
+}
+
+#resumo-personagem {
+    text-shadow: 0 0 1px #FF0000, 0 0 3px #0000FF;
+}
+
+#side-panel {
+    background-color: rgb(231, 182, 122);
+    background-image: url(../imagens/side-panel-background.jpg);
+    background-blend-mode: difference;
+    background-position-x: -32rem;
+}
+
+.bg-smoke-image {
+    background-image: url(../imagens/smoke-bg-image.jpg);
+    color: transparent;
+    background-position-x: -9rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.john-wick-gradient {
+    background:linear-gradient(#0F9F95,#384C5B);
+}
+
+.john-wick-2-gradient {
+    background:linear-gradient(#CA284F,#696EA8);
+}
+
+.john-wick-3-gradient {
+    background:linear-gradient(#E58525,#68019A);
+}
+
+.john-wick-4-gradient {
+    background:linear-gradient(#933603,#292B34);
+}
+
+#john-wick-resume-image {
+    background-image: url(../imagens/John-Wick-1-Wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#john-wick-2-resume-image {
+    background-image: url(../imagens/john-wick-chapter-2-wallpaper.jpg);
+    background-position-x: -6rem;
+    background-size: cover;
+}
+
+#john-wick-3-resume-image {
+    background-image: url(../imagens/john-wick-3-wallpaper.jpg);
+    background-position-x: -25rem;
+    background-size: cover;
+}
+
+#john-wick-4-resume-image {
+    background-image: url(../imagens/john-wick-4-wallpaper.jpg);
+    background-position-x: -14rem;
+    background-size: cover;
+}
